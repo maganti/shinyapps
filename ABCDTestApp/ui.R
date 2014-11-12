@@ -39,20 +39,24 @@ shinyUI(
                                         clinical decision making in individual patients",br(),br(),
                                       "This tool, developed as a Shiny App, is an adaptation of information, including scores, risk levels and associated percentage values, gathered from reliable, online resources,
                                         mentioned below in the references section. This tool is not meant for commercial or medical use
-                                        and is only built for the purpose of the project work related to the Coursera Data Products course"),
-                                    h4("Scoring System and Interpretation"),
+                                        and is only built for the purpose of the project work related to the Coursera Data Products course."),
+                            helpText("The entire code for this application can be found at", a("github ABCD² Score", href="https://github.com/maganti/shinyapps/tree/master/ABCDTestApp")),
+                                     
+                            h4("Scoring System and Interpretation"),
                                     tableOutput('scoreTable'),
                                     helpText("For example, a person aged 60 (1 point) with normal blood pressure (0 point) and without 
                                              diabetes (0 point) who experienced a TIA lasting 10 minutes (1 point) with a speech disturbance 
                                              but no weakness on one side of the body (1 point) would score a total of 3 points.",br(), br(),
                                         "Click on the", strong("ABCD2 Calculator tab"), "above to use the calculator to compute scores"),
                                 h4("References"),
+                                    
                                     helpText(a("ABCD² Score for Transient Ischemic Attack (TIA) - MedicalCRITERIA.com", href="http://www.medicalcriteria.com/criteria/neuro_abcd.htm"),
                                              style = "font-family: 'times'; font-si10pt"),
                                     helpText(a("ABCD² score From Wikipedia", href="http://en.wikipedia.org/wiki/ABCD%C2%B2_score"),
                                              style = "font-family: 'times'; font-si10pt"),
                                     helpText(a("Validation and refinement of scores to predict very early stroke risk after transient ischaemic attack", 
                                         href="http://emjournalclub.com/uploads/ABCD2_Lancet.pdf"),style = "font-family: 'times'; font-si10pt")
+                                    
               
 )
                    
